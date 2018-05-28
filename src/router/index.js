@@ -22,17 +22,10 @@ export default new Router({
         {
           path: 'router-a',
           name: 'router-a',
-          component: () => import('@/components/Router-A'),
-          children: [
-            {
-              path: 'test',
-              name: 'test',
-              component: () => import('@/components/Router-B')
-            }
-          ]
+          component: () => import('@/components/Router-A')
         },
         {
-          path: 'router-a/router-b',
+          path: 'router-b',
           name: 'router-b',
           component: () => import('@/components/Router-B')
         },
